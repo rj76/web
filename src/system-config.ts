@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // SystemJS configuration file, see links for more information
 // https://github.com/systemjs/systemjs
@@ -9,10 +9,15 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'bootstrap': 'vendor/bootstrap/dist/js/bootstrap.js',
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'bootstrap':{
+    format: 'cjs',
+    defaultExtension: 'js'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
